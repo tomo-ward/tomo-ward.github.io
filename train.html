@@ -25,7 +25,7 @@
 
   <script>
     $.get(
-      "http://www.jikokuhyo.co.jp/news/view/category_is/kansai/page/1", {},
+      "https://script.google.com/macros/s/AKfycbxiYNy7XIfZPPstnCpw8M_zwQKCHfBT1FKfnuoSWJAKjxhqeUA8/exec?http://www.jikokuhyo.co.jp/news/view/category_is/kansai/page/1", {},
       function (data) {
         // HTMLの結果を取得（引数のcharsetは設定したほうが良い）
         var content = data.replace(/\r?\n/g, '');
@@ -46,6 +46,12 @@
       }
     );
   </script>
+  <style>
+    .demo-list-item {
+      width: 300px;
+    }
+  </style>
+
   <!-- Always shows a header, even in smaller screens. -->
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
@@ -75,7 +81,17 @@
     <main class="mdl-layout__content">
       <div class="page-content">
         <!-- Your content goes here -->
-        <button class="foo-button mdc-button">Button</button>
+        <br>
+        <center>
+          <button class="foo-button mdc-button">最新の情報に再読込</button>
+          <ul class="demo-list-item mdl-list">
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                Bryan Cranston
+              </span>
+            </li>
+          </ul>
+        </center>
       </div>
     </main>
   </div>
@@ -92,7 +108,7 @@
       a.async = 1;
       a.src = g;
       m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https//www.google-analytics.com/analytics.js', 'ga');
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
   </script>
