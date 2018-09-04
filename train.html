@@ -24,8 +24,19 @@
 <body>
 
   <script>
+    //"https://script.google.com/macros/s/AKfycbxiYNy7XIfZPPstnCpw8M_zwQKCHfBT1FKfnuoSWJAKjxhqeUA8/exec?http://www.jikokuhyo.co.jp/news/view/category_is/kansai/page/1"
     $.get(
-      "https://script.google.com/macros/s/AKfycbxiYNy7XIfZPPstnCpw8M_zwQKCHfBT1FKfnuoSWJAKjxhqeUA8/exec?http://www.jikokuhyo.co.jp/news/view/category_is/kansai/page/1", {},
+      "https://script.googleusercontent.com/macros/echo?user_content_key=RGjgdb639RzuFCwLM3AG-iMUrG--04MHtTAb-IbVzb39zIvbWO9zHoqLPRG6_4W2SL53S9qfYGmO2sqem7BaVS-z-2bH8s0LOJmA1Yb3SEsKFZqtv3DaNYcMrmhZHmUMWojr9NvTBuBLhyHCd5hHa9FVu42tg6O6KVHBp3g1tbZkGxf7aLRjcwk2QeE51MF_9S__SDCd7-9sqyBzmDM2S8pvpotrCrqaBCRrZReUrtXhCStiXHnHCrRRVVYMnNOK53NR-4IDE8w73mQPjgX8v5J_TdFXj0gAEfp9iCiIBOGRrQ1Hx66N-VWTS2VRILtj&lib=MHVt8G4bPjge1cxH1SoSR7ZE9fKNOmxrb", {
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7",
+        "cache-control": "no-cache",
+        "origin": "http://evil.com/",
+        "pragma": "no-cache",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3521.2 Safari/537.36",
+        "x-client-data": "CIm2yQEIpbbJAQisncoBCNedygEI2Z3KAQiWn8oBCLCmygEIiqfKAQiNp8oBGLCYygEY+aXKAQ=="
+      },
       function (data) {
         // HTMLの結果を取得（引数のcharsetは設定したほうが良い）
         var content = data.replace(/\r?\n/g, '');
